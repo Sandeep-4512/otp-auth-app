@@ -1,0 +1,122 @@
+/* === Global Styles === */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* === Container Styling === */
+  .container {
+    width: 350px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* === Input Styling === */
+  input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* === Button Styling (General) === */
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* === Timer Styling === */
+  .timer {
+    font-size: 14px;
+    color: red;
+    margin-top: 10px;
+  }
+  
+  /* === Resend OTP Button Styling === */
+  .resend-btn {
+    background-color: #28a745;
+  }
+  
+  .resend-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* === Show/Hide OTP Button Styling === */
+  .show-otp-btn {
+    background-color: #6c757d;
+  }
+  
+  .show-otp-btn:hover {
+    background-color: #5a6268;
+  }
+  
+  /* === Audio OTP Button Styling === */
+  .audio-btn {
+    background-color: #ff9800;
+  }
+  
+  .audio-btn:hover {
+    background-color: #e68900;
+  }
+  
+  /* === Remember Me Checkbox === */
+  .remember-me-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .remember-me-container input {
+    width: auto;
+    margin-right: 5px;
+  }
+  
+  .remember-me-container label {
+    font-size: 14px;
+  }
+  
+  /* === Dashboard Styling === */
+  .chart-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .logout-btn {
+    margin-top: 20px;
+    background-color: red;
+  }
+  
+  .logout-btn:hover {
+    background-color: darkred;
+  }
+  
