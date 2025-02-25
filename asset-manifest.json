@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/otp-auth-app/static/css/main.8c838f89.css",
-    "main.js": "/otp-auth-app/static/js/main.65f4e77d.js",
+    "main.js": "/otp-auth-app/static/js/main.dfec3f85.js",
     "index.html": "/otp-auth-app/index.html",
     "main.8c838f89.css.map": "/otp-auth-app/static/css/main.8c838f89.css.map",
-    "main.65f4e77d.js.map": "/otp-auth-app/static/js/main.65f4e77d.js.map"
+    "main.dfec3f85.js.map": "/otp-auth-app/static/js/main.dfec3f85.js.map"
   },
   "entrypoints": [
     "static/css/main.8c838f89.css",
-    "static/js/main.65f4e77d.js"
+    "static/js/main.dfec3f85.js"
   ]
 }
