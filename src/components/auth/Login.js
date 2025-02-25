@@ -12,12 +12,20 @@ const Login = () => {
   const navigate = useNavigate();
 
   const generateOTP = () => {
-    const newOTP = Math.floor(100000 + Math.random() * 900000).toString();
-    setOtp(newOTP);
-    console.log(`OTP sent to your email: ${newOTP}`);
+    const now = new Date();
+    const day = String(now.getDate()).padStart(2, "0");
+    const month = String(now.getMonth() + 1).padStart(2, "0"); // Months are 0-based
+    const year = String(now.getFullYear());
+    const hours = String(now.getHours()).padStart(2, "0");
+    const minutes = String(now.getMinutes()).padStart(2, "0");
+  
+    const formattedOTP = `${day}${month}${year}${hours}${minutes}`;
+    setOtp(formattedOTP);
+    console.log(`Your OTP (DDMMYYYYHHMM format): ${formattedOTP}`);
     setTimer(30);
     setCanResend(false);
   };
+  
 
   useEffect(() => {
     generateOTP();
@@ -43,10 +51,12 @@ const Login = () => {
   // ✅ Function to read OTP aloud
   const readOTP = () => {
     if (otp) {
-      const msg = new SpeechSynthesisUtterance(`Your OTP is ${otp.split("").join(" ")}`);
+      const spacedOTP = otp.split("").join(" "); // Adds space between numbers
+      const msg = new SpeechSynthesisUtterance(`Your OTP is ${spacedOTP}`);
       window.speechSynthesis.speak(msg);
     }
   };
+  
 
   return (
     <div className="container">
